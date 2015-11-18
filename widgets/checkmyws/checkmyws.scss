@@ -1,0 +1,70 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color-ok:  rgba(20, 182, 91, 0.9);
+$background-color-critical:  rgba(204, 0, 0, 1);
+$value-color:       #fff;
+ 
+$title-color:       rgba(255, 255, 255, 1.0);
+$label-color:       rgba(255, 255, 255, 0.7);
+$moreinfo-color:    rgba(255, 255, 255, 0.7);
+ 
+// ----------------------------------------------------------------------------
+// Widget-checkmyws styles
+// ----------------------------------------------------------------------------
+.widget-checkmyws {
+ 
+  background-color: $background-color-ok;
+  vertical-align: top;
+ 
+  .title {
+    color: $title-color;
+    font-weight: bold;
+    font-size: 2.1em;
+  }
+
+ol, ul {
+    margin: 0 15px;
+    text-align: left;
+    color: $label-color;
+  }
+
+  ol {
+    list-style-position: inside;
+  } 
+ 
+li {
+    margin-bottom: 5px;
+    font-size: 1.5em;
+  }
+ 
+  .list-nostyle {
+    list-style: none;
+  }
+ 
+.value {
+    float: right;
+    margin-left: 12px;
+    font-weight: 600;
+    color: $value-color;
+  }
+ 
+  .status {
+    float: right;
+    margin-left: 12px;
+    font-weight: 600;
+    color: $value-color;
+  }
+ 
+  .updated-at {
+    color: rgba(0, 0, 0, 0.3);
+  }
+ 
+  &.status-ok {
+    background-color: $background-color-ok;
+  }
+ 
+  &.status-critical {
+    background-color: $background-color-critical;
+  }
+}
